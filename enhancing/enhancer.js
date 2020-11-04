@@ -3,7 +3,13 @@ module.exports = {
   fail,
   repair,
   get,
+  sum
 };
+
+
+function sum(...item){
+  return item.reduce((a,b)=>a+b,0);
+}
 
 function success(item) {
   return { ...item };
